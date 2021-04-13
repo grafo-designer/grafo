@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var topPos = $(this).scrollTop();
-        //Quantidade Y que o botão de scroll vai aparecer
+        //Y amount that the scroll button will appear
         if (topPos > 500) {
             $(scrollTop).css('opacity', '1');
         }else {
@@ -70,7 +70,7 @@ $(document).ready(function () {
         }
     });
 
-    //Velocidade a animação
+    //Speed ​​animation
     $(scrollTop).click(function () {
         $('html, body').animate(
             {
@@ -122,7 +122,7 @@ sr.reveal('.button',{delay: 200})
 sr.reveal('.projectlanguage',{delay: 400})
 sr.reveal('.image-space-delay',{delay: 200})
 sr.reveal('.image-other-delay',{delay: 600})
-//about mim delay
+//about me delay
 sr.reveal('.image-delay',{})
 sr.reveal('.title-delay',{delay: 200})
 sr.reveal('.description-delay',{delay: 400})

@@ -47,18 +47,17 @@ button:focus, input:focus {
 
 body {
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
-  background-color: #FEFBFB;
+  background-color: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: #202020;
-  
-  
+header{
+  background-color: #ececec;  
 }
+
 
 header .widthMaxContainer nav {
   padding: 0px 50px;
@@ -72,6 +71,7 @@ header .widthMaxContainer nav {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
+  
  
 }
 
@@ -84,7 +84,7 @@ header .widthMaxContainer nav {
 header .widthMaxContainer nav .logo {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #FEFBFB;
+  color: #023aa1;
 }
 
 header .widthMaxContainer nav .nav-list {
@@ -99,16 +99,18 @@ header .widthMaxContainer nav .nav-list li {
 }
 
 header .widthMaxContainer nav .nav-list li a {
-  color: #FEFBFB;
+  color: #000000;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.1rem;
   padding-bottom: 4px;
+  font-weight: bold;
 }
 
 header .widthMaxContainer nav .nav-list li a:hover {
-  border-bottom: 4px solid #5429CF;
+  border-bottom: 4px solid #023aa1;
+  
 }
 
 .mobile-menu {
@@ -119,7 +121,7 @@ header .widthMaxContainer nav .nav-list li a:hover {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #FEFBFB;
+  background-color: #000000;
   margin: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -182,13 +184,14 @@ header .widthMaxContainer nav .nav-list li a:hover {
     width: 60vw;
     height: 100vh;
     z-index: 999;
-    background-color: #202020;
+    background-color: #ececec;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 25px 0px 100px 0px;
     visibility: hidden;
+    
   }
   header .widthMaxContainer nav .nav-list li {
     margin-left: 30px;
@@ -232,7 +235,7 @@ header .widthMaxContainer nav .nav-list li a:hover {
 }
 
 main #presentationPortfolio {
-  background-color: #181818;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -282,7 +285,7 @@ main #presentationPortfolio .widthMaxContainer #presentationText {
 }
 
 main #presentationPortfolio .widthMaxContainer #presentationText h2 {
-  color: #FEFBFB;
+  color: #000000;
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -293,8 +296,8 @@ main #presentationPortfolio .widthMaxContainer #presentationText h2 #name {
 }
 
 main #presentationPortfolio .widthMaxContainer #presentationText a {
-  background-color: #5429CF;
-  color: #fff;
+  background-color: #023aa1;
+  color: rgb(255, 255, 255);
   padding: 15px 25px;
   max-width: 250px;
   display: -webkit-box;
@@ -318,7 +321,8 @@ main #presentationPortfolio .widthMaxContainer #presentationText a {
 
 main #presentationPortfolio .widthMaxContainer #presentationText a:hover {
   cursor: pointer;
-  background-color: #4220A3;
+  background-color: #073180;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
 main #presentationPortfolio .widthMaxContainer #presentationPhoto {
@@ -333,11 +337,24 @@ main #presentationPortfolio .widthMaxContainer #presentationPhoto {
 }
 
 main #presentationPortfolio .widthMaxContainer #presentationPhoto #fundo {
-  width: 100%;
-  max-width: 600px;
+
+  -webkit-animation: rotation 20s linear infinite;
   position: absolute;
-  top: 0;
-  right: 0;
+  right: 100px;
+  top:70px;
+  z-index: 4;
+  max-width: 400px;
+  width: 100%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(90deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -376,7 +393,7 @@ main #presentationPortfolio .widthMaxContainer #presentationPhoto .object {
 }
 
 main #about {
-  background-color: #202020;
+  background-color: #ececec;
 }
 
 main #about .widthMaxContainer {
@@ -449,14 +466,14 @@ main #about .widthMaxContainer #aboutText {
 
 main #about .widthMaxContainer #aboutText h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #000000;
   font-size: 32px;
   font-weight: 500;
 }
 
 main #about .widthMaxContainer #aboutText p {
   line-height: 30px;
-  color: #F9F9F9;
+  color: #000000;
 }
 
 main #about .widthMaxContainer #aboutText p:nth-child(2) {
@@ -470,7 +487,7 @@ main #about .widthMaxContainer #aboutText div {
 }
 
 main #about .widthMaxContainer #aboutText div a {
-  background-color: #5429CF;
+  background-color: #023aa1;
   color: #fff;
   padding: 15px 25px;
   max-width: 250px;
@@ -495,7 +512,8 @@ main #about .widthMaxContainer #aboutText div a {
 
 main #about .widthMaxContainer #aboutText div a:hover {
   cursor: pointer;
-  background-color: #4220A3;
+  background-color: #073180;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
 main #about .widthMaxContainer #aboutText div a:nth-child(1) {
@@ -505,7 +523,7 @@ main #about .widthMaxContainer #aboutText div a:nth-child(1) {
 main #project {
   padding: 100px 50px;
   text-align: center;
-  background-color: #181818;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -516,7 +534,7 @@ main #project {
 
 main #project .widthMaxContainer h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #000000;
   font-size: 32px;
   font-weight: 500;
 }
@@ -541,11 +559,12 @@ main #project .widthMaxContainer article > div {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33% - 20px);
       flex-basis: calc(33% - 20px);
-  background-color: #202020;
+  background-color: #ececec;
   padding: 40px 25px;
   margin: 10px;
   border-radius: 5px;
   position: relative;
+  box-shadow: rgba(114, 114, 114, 0.25) 0px 3px 8px;
 }
 
 @media screen and (max-width: 1124px) {
@@ -564,14 +583,14 @@ main #project .widthMaxContainer article > div {
 
 main #project .widthMaxContainer article > div h3 {
   font-size: 1.2rem;
-  color: #FEFBFB;
+  color: #000000;
 }
 
 main #project .widthMaxContainer article > div p {
   line-height: 28px;
   margin: 20px 0px;
   font-size: 1rem;
-  color: #F9F9F9;
+  color: #000000;
 }
 
 main #project .widthMaxContainer article > div span {
@@ -597,22 +616,22 @@ main #project .widthMaxContainer article > div .projectlanguage {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 100%;
   height: 20px;
   
 }
 
 main #project .widthMaxContainer article > div .projectlanguage span {
   padding: 5px;
-  background-color: #181818;
+  background-color: #cccccc;
   border-radius: 5px;
-  color: #FEFBFB;
+  color: #000000;
 }
 
 main #project .widthMaxContainer article > div button {
-  background-color: #5429CF;
+  background-color: #023aa1;
   padding: 10px 25px;
-  color: #FEFBFB;
+  color: #ffffff;
   border: 0;
   font-weight: 500;
   font-size: 14px;
@@ -627,7 +646,8 @@ main #project .widthMaxContainer article > div button {
 
 main #project .widthMaxContainer article > div button:hover {
   cursor: pointer;
-  background-color: #4220A3;
+  background-color: #073180;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
 main #project .widthMaxContainer article > div button .iconify {
@@ -642,7 +662,7 @@ main #project .widthMaxContainer a {
 main #services {
   padding: 100px 50px;
   text-align: center;
-  background-color: #202020;
+  background-color: #ececec;
 }
 
 @media screen and (max-width: 1024px) {
@@ -653,7 +673,7 @@ main #services {
 
 main #services .widthMaxContainer h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #000000;
   font-size: 32px;
   font-weight: 500;
 }
@@ -671,7 +691,7 @@ main #services .widthMaxContainer article {
 main #services .widthMaxContainer article div {
   text-align: center;
   height: auto;
-  background-color: #181818;
+  background-color: #cccccc;
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
@@ -680,6 +700,7 @@ main #services .widthMaxContainer article div {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 @media screen and (max-width: 1124px) {
@@ -697,7 +718,7 @@ main #services .widthMaxContainer article div {
 }
 /* service icons color */
 main #services .widthMaxContainer article div .iconify {
-  color: #08b0da;
+  color: #023aa1;
   font-size: 50px;
   margin: 10px 0px;
 }
@@ -705,19 +726,19 @@ main #services .widthMaxContainer article div .iconify {
 main #services .widthMaxContainer article div h3 {
   font-size: 1.2rem;
   padding: 20px 0px;
-  color: #FEFBFB;
+  color: #000000;
 }
 
 main #services .widthMaxContainer article div p {
   line-height: 28px;
   font-size: 1rem;
-  color: #F9F9F9;
+  color: #000000;
 }
 
 main #knowledge {
   padding: 100px 50px;
   text-align: center;
-  background-color: #181818;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -728,7 +749,7 @@ main #knowledge {
 
 main #knowledge .widthMaxContainer h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #000000;
   font-size: 32px;
   font-weight: 500;
 }
@@ -746,7 +767,7 @@ main #knowledge .widthMaxContainer div {
 main #knowledge .widthMaxContainer div article {
   text-align: center;
   height: auto;
-  background-color: #202020;
+  background-color: #ececec;
   padding: 30px;
   border-radius: 5px;
   margin: 10px;
@@ -757,6 +778,7 @@ main #knowledge .widthMaxContainer div article {
           flex-grow: 1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  box-shadow: rgba(114, 114, 114, 0.25) 0px 3px 8px;
 }
 
 @media screen and (max-width: 1124px) {
@@ -805,7 +827,7 @@ main #knowledge .widthMaxContainer div article .iconify {
 main #knowledge .widthMaxContainer div article h3 {
   padding: 15px 0px;
   font-size: 1.3rem;
-  color: #FEFBFB;
+  color: #000000;
 }
 
 main #knowledge .widthMaxContainer div article p {
@@ -952,10 +974,11 @@ main #knowledge .widthMaxContainer div article p {
   transition: all 0.5s ease;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
 .scrollTop .iconify {
-  font-size: 26px;
+  font-size: 25px;
   color: #FEFBFB;
 }
 
@@ -963,6 +986,7 @@ footer {
   padding: 50px 10px;
   background-color: #023aa1;
   text-align: center;
+  
 }
 
 footer p {
@@ -986,6 +1010,6 @@ footer #socialnetworks .iconify {
 }
 
 footer #socialnetworks .iconify:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
